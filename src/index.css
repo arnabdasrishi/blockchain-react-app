@@ -5,9 +5,90 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Navbar section CSS begins here */
+.navbar__main{
+  padding: 1rem;
+  background-color: rgb(45, 45, 48);
+  text-align: end;
+}
+.navbar__main > button {
+  margin-left: 2rem;
+  font-size: 1.4rem;
+}
+#nav_swp_btn {
+  border: 2px solid skyblue;
+  background-color: transparent;
+  color: white;
+  padding: 0.1rem 2rem;
+  border-radius: 5px;
+}
+#nav_conn_btn {
+  background-color: skyblue;
+  color: white;
+  padding: 0.2rem 2rem;
+  border-radius: 5px;
+}
+
+/* Main containts area begins */
+/* Left navigation section */
+
+.main__contents__area {
+  display: flex;
+  gap: 17%;
+}
+
+
+
+.main__left__pannel {
+  padding: 1rem;
+  color: rgb(189, 188, 188);
+  background-color: rgb(45, 45, 48);
+  width: 15%;
+}
+.links__left__pannel {
+  padding: 0.2rem 1rem;
+}
+.links__left__pannel > p{
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.links__left__pannel > p:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
+/* RIght contents area CSS */
+.wallet__address__bar {
+  border: 1px solid skyblue;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.wallet__dashboard__details {
+  border: 1px solid skyblue;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  font-size: 20px;
+  padding: 1rem 4rem;
+  gap: 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.wallet__detials > p {
+  font-size: 16px;
+}
+.wallet__detials > big {
+  color: skyblue;
 }
