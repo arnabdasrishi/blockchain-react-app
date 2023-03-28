@@ -2,14 +2,19 @@ import React from "react";
 import "../index.css";
 
 import { AiOutlineWallet } from "react-icons/ai";
+import { useAccount } from "wagmi";
 
 const RightContents = () => {
+
+  const account = useAccount();
+  console.log(account);
+
   return (
     <div className="right__main__contents__area">
       <div className="wallet__address__bar">
         <p>
           <AiOutlineWallet /> Wallet Address -
-          0x308FaD5390627A7F55056b90314DF095EBEa39FC
+          {account.isConnected ? account.address: " Please connect your wallet first"}
         </p>
       </div>
 

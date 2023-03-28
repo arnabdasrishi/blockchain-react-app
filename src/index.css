@@ -32,10 +32,8 @@ code {
   border-radius: 5px;
 }
 #nav_conn_btn {
-  background-color: skyblue;
-  color: white;
-  padding: 0.2rem 2rem;
-  border-radius: 5px;
+  background-color: transparent;
+  border: none;
 }
 
 /* Main containts area begins */
